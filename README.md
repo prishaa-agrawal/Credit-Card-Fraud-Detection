@@ -1,16 +1,16 @@
-# 💳 Credit Card Fraud Detection
+# Credit Card Fraud Detection
 
 A machine learning project that detects fraudulent credit card transactions using **Logistic Regression** and **Random Forest**, with **SMOTE** to handle class imbalance — a real-world challenge in fraud datasets.
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 Credit card fraud causes billions in losses every year. The challenge is that fraudulent transactions are extremely rare (typically < 2% of all transactions), making this a classic **imbalanced classification** problem. A naive model that always predicts "Legit" gets 98% accuracy but catches zero fraud — this project addresses that correctly.
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 fraud-detection/
@@ -39,7 +39,7 @@ fraud-detection/
 
 ---
 
-## ⚙️ Setup
+##  Setup
 
 ```bash
 # 1. Clone the repo
@@ -56,7 +56,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Usage
+##  Usage
 
 ### Step 1 — Exploratory Data Analysis
 ```bash
@@ -87,7 +87,7 @@ python predict.py --csv path/to/your/transactions.csv
 
 ---
 
-## 📊 Features Used
+## Features Used
 
 | Feature | Description |
 |---|---|
@@ -98,7 +98,7 @@ python predict.py --csv path/to/your/transactions.csv
 
 ---
 
-## 🧠 ML Techniques
+## ML Techniques
 
 | Technique | Why |
 |---|---|
@@ -110,7 +110,7 @@ python predict.py --csv path/to/your/transactions.csv
 
 ---
 
-## 📈 Sample Results
+##  Sample Results
 
 ```
 Model: Random Forest
@@ -124,7 +124,7 @@ Fraud             0.89      0.85      0.87
 
 ---
 
-## 🔄 Using Real Data (Kaggle Dataset)
+##  Using Real Data (Kaggle Dataset)
 
 Replace the synthetic data with the real Kaggle dataset for better results:
 
@@ -140,23 +140,5 @@ df["hour"] = (df["hour"] // 3600) % 24
 
 ---
 
-## 🛠️ Future Improvements
 
-- [ ] Add XGBoost / LightGBM for better performance
-- [ ] Hyperparameter tuning with GridSearchCV
-- [ ] Real-time prediction API with FastAPI
-- [ ] Streamlit dashboard for interactive exploration
-- [ ] SHAP values for model explainability
 
----
-
-## 📄 License
-
-MIT License — feel free to use, modify, and distribute.
-
----
-
-## 🙋 Author
-
-Built as part of a portfolio for open-source contributions.  
-Contributions welcome — open a PR or raise an issue!
